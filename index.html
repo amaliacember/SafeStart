@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>html { scroll-behavior: smooth; }</style>
+  <style>@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }</style>
 </head>
 <body class="bg-white font-sans text-ink antialiased">
 
@@ -34,14 +34,14 @@
 
   <!-- Header -->
   <header class="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
-    <a href="#top" class="flex items-center gap-2 font-semibold text-lg tracking-tight">
+    <a href="#top" class="flex items-center gap-2 font-semibold text-lg tracking-tight rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M12 2.5 4.5 5.5v6c0 4.6 3.1 8.2 7.5 10 4.4-1.8 7.5-5.4 7.5-10v-6L12 2.5Z" fill="#e6f0ec" stroke="#3f7366" stroke-width="1.6" stroke-linejoin="round"/>
         <path d="m8.8 12.2 2.4 2.4 4.2-4.6" stroke="#3f7366" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       SafeStart
     </a>
-    <a href="#for-organisations" class="text-sm font-medium text-sage-700 hover:text-sage-600">For organisations</a>
+    <a href="#for-organisations" class="text-sm font-medium text-sage-700 hover:text-sage-600 py-3 -my-3 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2">For organisations</a>
   </header>
 
   <main id="top">
@@ -58,7 +58,7 @@
         </p>
         <div class="mt-9">
           <a href="#signup" data-event="request-pilot-info"
-             class="inline-block bg-sage-600 hover:bg-sage-700 text-white font-medium rounded-full px-7 py-3.5 transition-colors">
+             class="inline-block bg-sage-600 hover:bg-sage-700 text-white font-medium rounded-lg px-7 py-3.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2">
             Request pilot info
           </a>
         </div>
@@ -67,7 +67,6 @@
       <!-- Phone visual -->
       <div class="flex justify-center" aria-hidden="true">
         <div class="relative">
-          <div class="absolute -inset-10 bg-sage-100 rounded-full blur-2xl opacity-70"></div>
           <svg class="relative" width="230" height="440" viewBox="0 0 230 440" fill="none">
             <rect x="6" y="6" width="218" height="428" rx="36" fill="#fff" stroke="#cfe1da" stroke-width="3"/>
             <rect x="16" y="16" width="198" height="408" rx="28" fill="#f4f8f6"/>
@@ -85,7 +84,7 @@
     <!-- 2. The problem -->
     <section class="bg-sage-50">
       <div class="max-w-3xl mx-auto px-6 py-24 md:py-28 text-center">
-        <h2 class="text-sm font-medium text-sage-600 uppercase tracking-wider mb-6">The problem</h2>
+        <h2 class="text-3xl font-semibold tracking-tight mb-6">The problem</h2>
         <p class="text-2xl md:text-3xl leading-snug font-medium">
           About 4 in 10 people say a partner or ex has checked or controlled their phone.
         </p>
@@ -93,7 +92,7 @@
           Caseworkers see it every week, but have no time or tools to fix it.
         </p>
         <!-- TEAM TO DO: add the real source of the 39% figure before 25 Nov -->
-        <p class="mt-8 text-xs text-slate-400">
+        <p class="mt-8 text-xs text-slate-600">
           Figure: 39% of people, from studies cited in our research. <span class="text-amber-700">[Draft: add full source]</span>
         </p>
       </div>
@@ -173,24 +172,24 @@
           <input id="email" type="email" class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sage-500">
         </div>
         <div>
-          <label for="need" class="block text-sm font-medium mb-1.5">What would you need from SafeStart? <span class="text-slate-400 font-normal">(optional)</span></label>
+          <label for="need" class="block text-sm font-medium mb-1.5">What would you need from SafeStart? <span class="text-slate-600 font-normal">(optional)</span></label>
           <textarea id="need" rows="3" class="w-full rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sage-500"></textarea>
         </div>
         <button type="submit" data-event="submit-pilot-form"
-                class="w-full bg-sage-600 hover:bg-sage-700 text-white font-medium rounded-full px-7 py-3.5 transition-colors">
+                class="w-full bg-sage-600 hover:bg-sage-700 text-white font-medium rounded-lg px-7 py-3.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2">
           Request pilot info
         </button>
         <p id="form-note" class="hidden text-sm text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3">
           Draft version: the form is not connected yet. Nothing was sent.
         </p>
-        <p class="text-xs text-slate-400 text-center leading-relaxed">
+        <p class="text-xs text-slate-600 text-center leading-relaxed">
           We only use your details to reply about the pilot. [Draft: final privacy line goes here.]
         </p>
       </form>
 
       <p class="mt-10 text-center text-sm text-slate-500">
         Have used company phones?
-        <a href="#donate" data-event="donate-phones" class="text-sage-700 underline underline-offset-4 hover:text-sage-600">Donate them.</a>
+        <a href="#donate" data-event="donate-phones" class="text-sage-700 underline underline-offset-4 hover:text-sage-600 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-500 focus-visible:ring-offset-2">Donate them.</a>
       </p>
     </section>
 
@@ -200,7 +199,7 @@
   <footer class="border-t border-slate-200">
     <div class="max-w-5xl mx-auto px-6 py-12 text-sm text-slate-600 space-y-3 text-center">
       <p>SafeStart is a student project at Thomas More, currently being tested.</p>
-      <p>In danger? Call <strong class="text-ink">112</strong>. Questions about violence: <strong class="text-ink">1712</strong> (free, anonymous).</p>
+      <p>In danger? Call <strong class="text-base text-ink">112</strong>. Questions about violence: <strong class="text-base text-ink">1712</strong> (free, anonymous).</p>
     </div>
   </footer>
 
